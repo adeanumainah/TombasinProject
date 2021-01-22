@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TombasinProject</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search_hint">search..</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="tambahkan">tambahkan</string>
+    <string name="textJudul">judul</string>
+    <string name="username">username</string>
+    <string name="useremail">email</string>
+</resources>
