@@ -4,10 +4,21 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="search_hint">search..</string>
-    <string name="title">Title</string>
-    <string name="price">Price</string>
-    <string name="tambahkan">tambahkan</string>
+    <string name="title">Title123456789</string>
+    <string name="price">Price123456789</string>
+    <string name="tambahkan">tambah</string>
     <string name="textJudul">judul</string>
     <string name="username">username</string>
     <string name="useremail">email</string>
+    <string name="sayuran">Sayuran</string>
+    <string name="buah">Buah</string>
+    <string name="laukpauk">Lauk Pauk</string>
+    <string name="seafood">Seafood</string>
+    <string name="bumbu">Bumbu</string>
+    <string name="sembako">Sembako</string>
+    <string name="jajanan">Jajanan</string>
+    <string name="kesehatan">Kesehatan</string>
+    <string name="siapmasak">Siap Masak</string>
+    <string name="seeall">See All</string>
+    <string name="produk_terlaris">Produk Terlaris</string>
 </resources>

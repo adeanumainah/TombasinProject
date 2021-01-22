@@ -11,6 +11,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pastel">#ef5350</color>
 
     <!--color untuk gradient tansition-->
     <color name="deep_purple_500">#673ab7</color>

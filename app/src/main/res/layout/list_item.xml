@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/_10dp"
-        app:cardCornerRadius="@dimen/_24dp">
+        app:cardCornerRadius="@dimen/_8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,9 +31,10 @@
 
             <TextView
                 android:id="@+id/tv_title"
-                android:layout_width="match_parent"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:layout_marginTop="@dimen/_10dp"
                 android:paddingLeft="@dimen/_10dp"
                 android:paddingTop="@dimen/_10dp"
                 android:paddingRight="@dimen/_10dp"
@@ -45,7 +46,7 @@
 
             <TextView
                 android:id="@+id/tv_price"
-                android:layout_width="match_parent"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:paddingLeft="@dimen/_10dp"
@@ -56,13 +57,6 @@
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_12sp" />
 
-            <RatingBar
-                style="@style/Widget.AppCompat.RatingBar.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_7dp"
-                android:numStars="5"
-                android:rating="4.5" />
         </LinearLayout>
 
         <LinearLayout
@@ -72,9 +66,10 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_30dp"
-                android:text="@string/tambahkan"/>
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:background="@color/pastel"
+                android:text="@string/tambahkan" />
         </LinearLayout>
 
     </LinearLayout>
