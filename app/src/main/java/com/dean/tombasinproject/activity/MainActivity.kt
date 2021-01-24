@@ -8,8 +8,17 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.dean.tombasinproject.R
+import com.dean.tombasinproject.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
+//    private val onNavigationItemSelectedListener =
+//        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+//            when (item.itemId){
+////                R.id.navigation_home ->
+////                    val  = HomeFragment()
+////                add
+//            }
+//        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

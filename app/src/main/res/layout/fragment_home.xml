@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_appbar"
     tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/rl1"
@@ -89,7 +93,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="@dimen/_12dp"
                 android:background="@color/pastel"
-                android:text="ganti" />
+                android:text="@string/ganti" />
 
         </LinearLayout>
 
@@ -119,7 +123,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5dp"
                 app:cardCornerRadius="@dimen/_5dp"
@@ -127,14 +131,15 @@
 
                 <ImageView
                     android:id="@+id/img_sayuran"
-                    android:layout_width="50dp"
+                    android:layout_width="45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/sayuran"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 app:cardCornerRadius="@dimen/_5dp"
@@ -142,14 +147,15 @@
 
                 <ImageView
                     android:id="@+id/img_buah"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/buah"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 app:cardCornerRadius="@dimen/_5dp"
@@ -157,14 +163,15 @@
 
                 <ImageView
                     android:id="@+id/img_laukpauk"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/lauk_pauk"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 app:cardCornerRadius="@dimen/_5dp"
@@ -172,14 +179,15 @@
 
                 <ImageView
                     android:id="@+id/img_seafood"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/seafood"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 app:cardCornerRadius="@dimen/_5dp"
@@ -187,7 +195,8 @@
 
                 <ImageView
                     android:id="@+id/img_bumbu"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/bumbu"/>
 
@@ -205,27 +214,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sayuran"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_sayuran"
-                android:layout_marginStart="@dimen/_5dp"/>
+                android:layout_marginStart="@dimen/_6dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/buah"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_buah"
-                android:layout_marginStart="@dimen/_20dp"/>
+                android:layout_marginStart="@dimen/_40dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/laukpauk"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_laukpauk"
-                android:layout_marginStart="@dimen/_20dp"/>
+                android:layout_marginStart="@dimen/_30dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/seafood"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_seafood"
                 android:layout_marginStart="@dimen/_20dp"/>
 
@@ -233,8 +246,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bumbu"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_bumbu"
-                android:layout_marginStart="@dimen/_20dp"/>
+                android:layout_marginStart="@dimen/_30dp"/>
         </LinearLayout>
 
 
@@ -245,7 +259,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5dp"
                 android:layout_marginTop="@dimen/_10dp"
@@ -254,14 +268,15 @@
 
                 <ImageView
                     android:id="@+id/img_sembako"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/sembako"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 android:layout_marginTop="@dimen/_10dp"
@@ -270,14 +285,15 @@
 
                 <ImageView
                     android:id="@+id/img_jajanan"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/jajanan"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 android:layout_marginTop="@dimen/_10dp"
@@ -286,14 +302,15 @@
 
                 <ImageView
                     android:id="@+id/img_kesehatan"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/healthy_64"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_55dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20dp"
                 android:layout_marginTop="@dimen/_10dp"
@@ -302,7 +319,8 @@
 
                 <ImageView
                     android:id="@+id/img_siapmasak"
-                    android:layout_width="50dp"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
                     android:src="@drawable/siapmasak"/>
 
@@ -321,37 +339,56 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sembako"
                 android:id="@+id/tv_sembako"
+                android:textSize="@dimen/_13sp"
                 android:layout_marginStart="@dimen/_5dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/jajanan"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_jajanan"
-                android:layout_marginStart="@dimen/_20dp"/>
+                android:layout_marginStart="@dimen/_25dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/kesehatan"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_kesehatan"
-                android:layout_marginStart="@dimen/_20dp"/>
+                android:layout_marginStart="@dimen/_22dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/siapmasak"
+                android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_siapmasak"
-                android:layout_marginStart="@dimen/_20dp"/>
+                android:layout_marginStart="@dimen/_18dp"/>
         </LinearLayout>
     </LinearLayout>
+
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/is_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_below="@id/ll1"
+        android:layout_margin="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_15dp"
+        app:fillColor="@android:color/white"
+        app:pageColor="@android:color/transparent"
+        app:radius="@dimen/_5dp"
+        app:slideInterval="3000"
+        app:strokeColor="@color/strokeColor"
+        app:strokeWidth="@dimen/_1dp" />
 
     <LinearLayout
         android:id="@+id/ll2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/ll1"
+        android:layout_below="@id/is_main"
         android:padding="@dimen/_5dp">
 
         <TextView
@@ -368,7 +405,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/seeall"
-            android:textColor="@android:color/black"
+            android:textColor="@color/pastel"
+            android:textStyle="bold"
             android:textSize="@dimen/_14sp"
             android:layout_marginStart="200dp"/>
     </LinearLayout>
@@ -381,5 +419,6 @@
         android:layout_marginTop="@dimen/_10dp"
         android:layout_margin="@dimen/_5dp"/>
 
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
