@@ -5,19 +5,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.androidnetworking.AndroidNetworking
+import com.androidnetworking.common.Priority
+import com.androidnetworking.error.ANError
+import com.androidnetworking.interfaces.JSONArrayRequestListener
 import com.dean.tombasinproject.R
 import com.dean.tombasinproject.adapter.TumbasinAdapter
+import com.dean.tombasinproject.model.ProductItem
 import com.squareup.picasso.Picasso
 import com.synnapps.carouselview.CarouselView
 import com.synnapps.carouselview.ImageListener
+import kotlinx.android.synthetic.main.fragment_home.*
+import org.json.JSONArray
+import org.json.JSONException
 
 class HomeFragment : Fragment() {
 
     private lateinit var tumbasinAdapter: TumbasinAdapter
+    var productItem: MutableList<ProductItem> = ArrayList()
 
     companion object{
         fun defaultFragment(): HomeFragment{
@@ -53,8 +61,57 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val carouselView = R.id.is_main as CarouselView;
+        val carouselView = is_main as CarouselView
         carouselView.setPageCount(imageContentSlider.size)
         carouselView.setImageListener(imageContentListener)
+
+        showRecyclerList()
+        getlistProduct()
+
+    }
+
+    private fun showRecyclerList() {
+        tumbasinAdapter.notifyDataSetChanged()
+        rv_product.setHasFixedSize(true)
+        rv_product.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        rv_product.adapter = tumbasinAdapter
+    }
+
+
+    private fun getlistProduct() {
+        AndroidNetworking.get(com.dean.tombasinproject.network.Api.URL_LIST_PRODUCT)
+            .setPriority(Priority.MEDIUM)
+            .build().getAsJSONArray(object : JSONArrayRequestListener {
+                override fun onResponse(response: JSONArray) {
+                    for (i in 0 until response.length()) {
+                        try {
+                            val dataApi = ProductItem()
+                            val jsonObject = response.getJSONObject(i)
+                            dataApi.name = jsonObject.getString("name")
+                            dataApi.price = jsonObject.getString("price")
+//                            dataApi.images = jsonObject.getInt("images")
+                            productItem.add(dataApi)
+                        } catch (e: JSONException) {
+                            e.printStackTrace()
+                            Toast.makeText(getContext(), "Gagal menampilkan data",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+                }
+
+                override fun onError(anError: ANError?) {
+                    Toast.makeText(getContext(),"Tidak ada jaringan",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+
+            })
+    }
+
+    private fun showProduct() {
+//        tumbasinAdapter = TumbasinAdapter(HomeFragment::class.java,
+//            productItem, this)
+        rv_product!!.adapter = tumbasinAdapter
     }
 }
