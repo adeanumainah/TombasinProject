@@ -72,6 +72,7 @@ class HomeFragment : Fragment() {
 
     private fun showRecyclerList() {
         tumbasinAdapter.notifyDataSetChanged()
+        tumbasinAdapter.setData(getlistProduct())
         rv_product.setHasFixedSize(true)
         rv_product.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         rv_product.adapter = tumbasinAdapter
@@ -109,9 +110,8 @@ class HomeFragment : Fragment() {
             })
     }
 
-    private fun showProduct() {
-//        tumbasinAdapter = TumbasinAdapter(HomeFragment::class.java,
-//            productItem, this)
-        rv_product!!.adapter = tumbasinAdapter
-    }
+//    private fun showProduct() {
+////        tumbasinAdapter = TumbasinAdapter(context, productItem,)
+//        rv_product!!.adapter = tumbasinAdapter
+//    }
 }

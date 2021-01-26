@@ -14,9 +14,9 @@ class TumbasinAdapter(private val listener: (Tumbasin) ->Unit)
     : RecyclerView.Adapter<TumbasinAdapter.ViewHolder>() {
     private val listData = ArrayList<Tumbasin>()
 
-    fun setData(items: ArrayList<Tumbasin>){
+    fun setData(items: Unit){
         listData.clear()
-        listData.addAll(items)
+//        listData.addAll(items)
         //syncron data
         notifyDataSetChanged()
     }
@@ -48,3 +48,4 @@ class TumbasinAdapter(private val listener: (Tumbasin) ->Unit)
         }
     }
 }
+

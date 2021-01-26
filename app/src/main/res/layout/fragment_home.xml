@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
     <RelativeLayout
         android:id="@+id/rl1"
@@ -223,6 +223,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sayuran"
                 android:textSize="@dimen/_13sp"
+                android:textColor="@android:color/black"
                 android:id="@+id/tv_sayuran"
                 android:layout_marginStart="@dimen/_6dp"/>
 
@@ -232,12 +233,14 @@
                 android:text="@string/buah"
                 android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_buah"
+                android:textColor="@android:color/black"
                 android:layout_marginStart="@dimen/_40dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/laukpauk"
+                android:textColor="@android:color/black"
                 android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_laukpauk"
                 android:layout_marginStart="@dimen/_30dp"/>
@@ -247,6 +250,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/seafood"
                 android:textSize="@dimen/_13sp"
+                android:textColor="@android:color/black"
                 android:id="@+id/tv_seafood"
                 android:layout_marginStart="@dimen/_20dp"/>
 
@@ -254,6 +258,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bumbu"
+                android:textColor="@android:color/black"
                 android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_bumbu"
                 android:layout_marginStart="@dimen/_30dp"/>
@@ -346,6 +351,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sembako"
+                android:textColor="@android:color/black"
                 android:id="@+id/tv_sembako"
                 android:textSize="@dimen/_13sp"
                 android:layout_marginStart="@dimen/_5dp"/>
@@ -355,6 +361,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/jajanan"
                 android:textSize="@dimen/_13sp"
+                android:textColor="@android:color/black"
                 android:id="@+id/tv_jajanan"
                 android:layout_marginStart="@dimen/_25dp"/>
 
@@ -363,6 +370,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/kesehatan"
                 android:textSize="@dimen/_13sp"
+                android:textColor="@android:color/black"
                 android:id="@+id/tv_kesehatan"
                 android:layout_marginStart="@dimen/_22dp"/>
 
@@ -370,6 +378,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/siapmasak"
+                android:textColor="@android:color/black"
                 android:textSize="@dimen/_13sp"
                 android:id="@+id/tv_siapmasak"
                 android:layout_marginStart="@dimen/_18dp"/>

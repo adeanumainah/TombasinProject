@@ -53,9 +53,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
 
     //add
-//    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.android.support:design:30.0.0'
     implementation 'com.synnapps:carouselview:0.1.4'
-//    implementation 'com.android.support:recyclerview-v7:29.0.0'
+    implementation 'com.android.support:recyclerview-v7:30.0.0'
 
     implementation "android.arch.lifecycle:common-java8:1.1.1"
     implementation"io.reactivex.rxjava2:rxandroid:2.0.1"
@@ -67,7 +67,7 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:4.11.0"
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     //restapi
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
